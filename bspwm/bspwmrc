@@ -1,0 +1,27 @@
+#! /bin/sh
+
+#
+#                 ░█▀▄░█▀▀░█▀█░█░█░█▄█
+#                 ░█▀▄░▀▀█░█▀▀░█▄█░█░█
+#                 ░▀▀░░▀▀▀░▀░░░▀░▀░▀░▀
+#
+
+setxkbmap -layout 'us,ru' -option 'grp:win_space_toggle'
+xsetroot -cursor_name left_ptr &
+sxhkd &
+#nm-applet &
+picom &
+nitrogen --restore
+polybar example &
+dunst &
+
+# Workspaces
+
+$HOME/.config/bspwm/autostart
+bspc rule --add program state=floating rectangle=WxH+X+Y
+bspc config window_gap          20
+bspc config split_ratio          1
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+bspc rule -a telegram-desktop state=floating
