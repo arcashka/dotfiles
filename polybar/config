@@ -25,12 +25,12 @@ background-alt = #414141
 ;foreground = ${xrdb:color7:#222}
 foreground = #dddddd
 foreground-alt = #dddddd
-primary = #2eb8ff
-secondary = #2eb8ff
-alert = #2eb8ff
+primary = #ff6578
+secondary = #ff6578
+alert = #ff6578
 
 [bar/example]
-monitor = DP-4
+monitor = DP-2
 width = 100%
 height = 35
 ;offset-x = 1%
@@ -82,7 +82,7 @@ cursor-scroll = ns-resize
 [bar/secondary]
 inherit = bar/example
 
-monitor = DP-3
+monitor = eDP-1
 modules-left = bspwm
 modules-center =
 modules-right =

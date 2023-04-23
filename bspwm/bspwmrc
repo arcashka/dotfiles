@@ -11,13 +11,17 @@ xsetroot -cursor_name left_ptr &
 sxhkd &
 #nm-applet &
 picom &
-nitrogen --restore
 polybar example &
+polybar secondary &
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/github
 dunst &
 
 # Workspaces
 
 $HOME/.config/bspwm/autostart
+
+nitrogen --restore
 bspc rule --add program state=floating rectangle=WxH+X+Y
 bspc config window_gap          20
 bspc config split_ratio          1
