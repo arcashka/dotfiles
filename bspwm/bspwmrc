@@ -13,8 +13,6 @@ sxhkd &
 picom &
 polybar example &
 polybar secondary &
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/github
 dunst &
 
 # Workspaces
