@@ -2,7 +2,7 @@
 
 sh ~/.screenlayout/default.sh
 bspc monitor DP-2 -d 1 2 3 4 5
-bspc monitor eDP-1 -d 6 7 8 9 0
+bspc monitor eDP-1 -d 1 2 3 4 5
 
 bspc config border_width         2
 #bspc config focused_border_color "#3B4252"

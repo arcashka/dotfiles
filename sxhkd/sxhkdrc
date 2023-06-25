@@ -8,11 +8,11 @@ super + Return
 
 # filemanager
 super + e
-    thunar
+    nautilus
 
 # restart polybar
 ctrl + alt + p
-    ~/.config/polybar/scripts/restart-polybar.sh
+    ~/.config/polybar/restart-polybar.sh
 
 # ranger
 shift + super + r
@@ -85,9 +85,6 @@ super + {grave,Tab}
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}' --follow
-
-ctrl + alt + {Left,Right}
-    bspc node -d {prev,next} -f
 
 ctrl + alt + {h,l}
     bspc node -d {prev,next} -f
