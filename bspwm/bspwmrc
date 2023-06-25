@@ -12,7 +12,9 @@ sxhkd &
 #nm-applet &
 picom &
 polybar example &
-polybar secondary &
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+ssh-add ~/.ssh/id_ed25519
 dunst &
 
 # Workspaces
@@ -21,9 +23,9 @@ $HOME/.config/bspwm/autostart
 
 nitrogen --restore
 bspc rule --add program state=floating rectangle=WxH+X+Y
-bspc config window_gap          20
-bspc config split_ratio          1
-bspc config borderless_monocle   true
-bspc config gapless_monocle      true
+bspc config window_gap 20
+bspc config split_ratio 1
+bspc config borderless_monocle true
+bspc config gapless_monocle true
 
 bspc rule -a telegram-desktop state=floating
