@@ -1,2 +1,0 @@
-polybar example &
-polybar secondary &
