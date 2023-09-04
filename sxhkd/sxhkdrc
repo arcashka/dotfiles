@@ -8,7 +8,7 @@ super + Return
 
 # filemanager
 super + e
-    nautilus
+    thunar
 
 # restart polybar
 ctrl + alt + p
