@@ -63,7 +63,6 @@ cursor-scroll = ns-resize
 
 [bar/secondary]
 inherit = bar/example
-
 monitor = __MONITOR2__
 modules-left = bspwm
 modules-center =
