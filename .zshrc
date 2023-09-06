@@ -15,6 +15,19 @@ export PATH="$PATH:/home/arcashka/.config/Code/User/globalStorage/ms-vscode-remo
 ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(git)
 
+dockerzsh() {
+  docker exec -it $1 zsh
+}
+
+# Define completion for dockerzsh
+_dockerzsh() {
+  local -a container_names
+  container_names=($(docker ps --format "{{.Names}}"))
+  _describe 'values' container_names
+}
+
+compdef _dockerzsh dockerzsh
+
 source $ZSH/oh-my-zsh.sh
 
 alias lg="lazygit"
