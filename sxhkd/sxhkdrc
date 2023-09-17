@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	flatpak run org.wezfurlong.wezterm
+	wezterm
 
 # filemanager
 super + e
@@ -16,7 +16,7 @@ ctrl + alt + p
 
 # ranger
 shift + super + r
-    flatpak run org.wezfurlong.wezterm start -- ranger
+    wezterm start -- ranger
 
 # browser
 ctrl + alt + f
