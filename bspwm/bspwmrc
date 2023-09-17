@@ -9,7 +9,7 @@
 setxkbmap -layout 'us,ru' -option 'grp:win_space_toggle'
 xsetroot -cursor_name left_ptr &
 sxhkd &
-picom &
+# picom &
 eval "$(ssh-agent -s)"
 dunst &
 

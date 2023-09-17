@@ -19,6 +19,9 @@ dockerzsh() {
   docker exec -it $1 zsh
 }
 
+autoload -Uz compinit
+compinit
+
 # Define completion for dockerzsh
 _dockerzsh() {
   local -a container_names
