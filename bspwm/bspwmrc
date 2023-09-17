@@ -29,7 +29,7 @@ if [ "$(hostname)" == "arcashka-Latitude-5531" ]; then
 # pc
 elif [ "$(hostname)" == "arcashka-pc" ]; then
 	MONITOR="DP-4"
-	$HOME/.config/bspwm/screenlayouts/pc.sh
+	sh $HOME/.config/bspwm/screenlayouts/pc.sh
 fi
 if [ -z "$MONITOR2" ]; then
 	sed "s/__MONITOR__/$MONITOR/g" ~/.config/polybar/config.template >/tmp/polybar-config
@@ -56,5 +56,3 @@ bspc config window_gap 20
 bspc config split_ratio 1
 bspc config borderless_monocle true
 bspc config gapless_monocle true
-
-bspc rule -a telegram-desktop state=floating
