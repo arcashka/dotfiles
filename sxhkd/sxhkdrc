@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	wezterm
+	flatpak run org.wezfurlong.wezterm
 
 # filemanager
 super + e
@@ -13,10 +13,6 @@ super + e
 # restart polybar
 ctrl + alt + p
     ~/.config/polybar/restart-polybar.sh
-
-# ranger
-shift + super + r
-    wezterm start -- ranger
 
 # browser
 ctrl + alt + f

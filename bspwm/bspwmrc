@@ -52,7 +52,7 @@ blueman-applet 2>&1 >/dev/null &
 
 nitrogen --restore
 bspc rule --add program state=floating rectangle=WxH+X+Y
-bspc config window_gap 20
+bspc config window_gap 10
 bspc config split_ratio 1
 bspc config borderless_monocle true
 bspc config gapless_monocle true

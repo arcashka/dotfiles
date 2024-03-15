@@ -6,6 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 export ZSH="$HOME/.oh-my-zsh"
+export DOCKER_OPTS="${DOCKER_OPTS} --insecure-registry apricot-docker.artifact.swf.i.mercedes-benz.com"
 
 bindkey -v
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
