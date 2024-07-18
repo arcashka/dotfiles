@@ -36,9 +36,13 @@ source $ZSH/oh-my-zsh.sh
 
 alias lg="lazygit"
 alias devup="devcontainer up --workspace-folder ."
+alias nvim_up='nvim --headless --listen localhost:6666'
+alias neovide_connect='neovide --server localhost:6666'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-eval "$(ssh-agent -s)" > /dev/null
-ssh-add ~/.ssh/github > /dev/null 2>&1
+if command -v ssh-agent > /dev/null 2>&1; then
+  eval "$(ssh-agent -s)" > /dev/null 2>&1
+  ssh-add ~/.ssh/github > /dev/null 2>&1
+fi
